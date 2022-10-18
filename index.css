@@ -1,0 +1,35 @@
+
+@font-face {
+    font-family: test;
+    src: url("textile_regular.ttf") format('truetype');
+}
+.header{
+    font-family: test;
+    font-weight: 9;
+    font-size: 50px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+}
+#output{
+    display: none;
+}
+
+#area{
+    resize: none;
+}
+form{
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    
+}
+button{
+    margin-left: 20px;
+    height: 40px;
+    width: 130px;
+    font-size: 20px;
+}

@@ -1,0 +1,11 @@
+"The Gang Gives Frank
+  an intervention"	//2 space indent so 'a' is under the 'h'
+
+
+
+
+
+  '-i', 'always sunny.mp4', '-i', 'intro_title', '-filter_complex', '[0]trim=start=0:duration=2.9[f];[0]trim=start=2.9[s];[1][0]scale2ref[i][v];[f][i]overlay[f];[f][s]concat', '-c:a', 'copy', 'intro.mp4'
+  '-i', 'always sunny.mp4', '-i', 'intro_title', '-filter_complex', '[1][0]scale2ref[i][v];[v][i]overlay', '-c:a', 'copy', 'intro.mp4
+
+  '-i', 'always sunny.mp4', '-i', 'intro_title', '-filter_complex', '[1][0]scale2ref[i][v];[v][i]overlay=enable='between(t,0,2900ms)'', '-c:a', 'copy', 'intro.mp4'

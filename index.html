@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"  href="./index.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h1 class="header">It's Always Sunny Intro Generator</h1>
+        <!-- <p>"Mac Fights Gay Marriage"</p> -->
+        <div>
+            
+            <canvas  id="canvas" width="1280" height="713" style="border:2px solid #d3d3d3;">
+                
+            </canvas>
+        </div>
+        
+        <form>
+            <textarea id ='area' cols="49" rows="7" placeholder="Start a new line to add a line break to the title" required></textarea>
+            <!-- <input  id="input" name='homo' > -->
+            
+            <button id="generate">Generate</button>
+        </form>
+        <video id="output"></video controls>
+    </div>
+    
+    <!-- <script src="./src/index.js" type="module"></script> -->
+    <script src="./dist/main.js" type ="module"></script>
+    
+    <!-- <script src="static/js/ffmpeg.min.js"></script> -->
+</body>
+</html>
