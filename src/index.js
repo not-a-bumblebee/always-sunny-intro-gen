@@ -1,11 +1,12 @@
 import { createFFmpeg, fetchFile } from '@ffmpeg/ffmpeg';
-// import { writeFile } from 'fs/promises';
+
 
 
 if(crossOriginIsolated){
-    console.log('we isolated')
-}{
-    console.log('we NOT isolated',crossOriginIsolated)
+    console.log('We are cors isolated')
+}
+else{
+    console.log('we NOT cors isolated',crossOriginIsolated)
 }
 
 
@@ -32,7 +33,7 @@ function generateTitle(text) {
     tits[tits.length-1] = tits[tits.length-1] + '"';
     let k = [];
 
-    // canvas.clearRect(0,0,1280,713);
+  
     canvas.fillStyle = 'black';
     canvas.fillRect(0,0,1280,713);
     
@@ -52,13 +53,13 @@ button.addEventListener('click',(event)=>{
     event.preventDefault();
 
     img = can.toDataURL('image/png');
-    // document.write('<img src =" '+ img + '"/>');
+    
     Abed();
 })
 async function Abed() {
     console.log("Generating INtro");
     let vidya = await fetch('./always sunny.mp4');
-    let title = await fetch('./download.png');
+
     
     console.log("vidya",vidya);
     console.log("title",title);
@@ -93,8 +94,6 @@ f.load().then((font) => {
 
     video = document.getElementById('video');
 
-    // can.width = "1920px";
-    // can.height = "1080px";
     canvas.fillStyle = 'black';
     canvas.fillRect(0,0,1280,713);
 
@@ -103,18 +102,5 @@ f.load().then((font) => {
     canvas.font = '62px test';
     canvas.filter = "blur(0.7px)"
     canvas.textAlign = "center";
-    // canvas.fillText('"Mac Fights'.split("").join(String.fromCharCode(8202)), 649, 345);
 
-    
-    // let io = 'Ga'.split("").join(String.fromCharCode(8202));
-    // canvas.font = '60px times new roman';
-
-
-
-    // canvas.fillText('Gay Marriage"'.split("").join(String.fromCharCode(8202)), 638, 417);
-
-
-
-    //inital 'ga' co ords 423, 417);
-    // canvas.fillText(' Ga', 399, 417);
 })
