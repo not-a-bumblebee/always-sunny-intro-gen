@@ -1,33 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IASIP Intro Generator</title>
-    <link rel="stylesheet"  href="./index.css">
-    
+    <link rel="stylesheet" href="./index.css">
+
 </head>
+
 <body>
 
     <div class="container">
         <h1 class="header">It's Always Sunny Intro Generator</h1>
         <div>
-            
-            <canvas  id="canvas" width="1280" height="713" ;">
-                
-            </canvas>
+            <canvas id="canvas" width="1280" height="713"></canvas>
         </div>
-        
+
         <form>
-            <textarea id ='area' cols="49" rows="7" placeholder="Start a new line to add a line break to the title" required></textarea>
-            
+            <textarea id='area' cols="49" rows="7" placeholder="Start a new line to add a line break to the title"
+                required spellcheck="false"></textarea>
+
             <button id="generate">Generate</button>
         </form>
-        <video  controls id="output"></video>
+        <div>
+            <p id="loading"></p>
+        </div>
+        <video controls id="output"></video>
     </div>
-    
-    <script src="./dist/main.js" type ="module"></script>
-    
+
+    <script src="./dist/main.js" type="module"></script>
+
 </body>
+
 </html>
