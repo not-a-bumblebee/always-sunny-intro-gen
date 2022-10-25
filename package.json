@@ -10,6 +10,7 @@
     "webpack-cli": "^4.10.0"
   },
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "start": "node server.js"
   }
 }
