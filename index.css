@@ -1,7 +1,7 @@
 
 @font-face {
     font-family: textile_regular;
-    src: url("textile_regular.ttf") format('truetype');
+    src: url("/textile_regular.ttf") format('truetype');
 }
 .header{
     font-family: textile_regular;
