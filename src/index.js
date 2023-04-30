@@ -17,7 +17,12 @@ else{
     console.log('we NOT cors isolated',crossOriginIsolated)
 }
 
+//  async function fetchTest(){
+//     let vidya = await fetch('./always sunny.mp4');
+//     console.log("Fetched video",vidya);
+// }
 
+// fetchTest()
 function generateTitle() {
    
     console.log("input:",input.value);
@@ -61,7 +66,7 @@ async function generateIntro() {
     button.disabled = "true"
     console.log("Generating Intro");
 
-    let vidya = await fetch('./always sunny.mp4');
+    let vidya = await fetch('./always sunny.mp4')
     console.log("vidya",vidya);
 
     if(!ffmpeg.isLoaded()){
