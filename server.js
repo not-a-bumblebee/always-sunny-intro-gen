@@ -1,4 +1,6 @@
 const express = require('express');
+const path = require('path')
+
 
 const PORT = process.env.PORT|| 3000;
 let app = express();
@@ -11,16 +13,16 @@ app.use((req, res, next) => {
   //To enable cross origin isolation.
   res.append("Cross-Origin-Embedder-Policy", "require-corp");
   res.append("Cross-Origin-Opener-Policy", "same-origin");
-  console.log("applying headers");
+  
 
   next();
 });
 
-app.use(express.static(__dirname))
+app.use(express.static(path.resolve()+ "/dist"))
 
 app.get('/', (req, res) => {
-
-  res.sendFile(__dirname + '/index.html');
+  console.log(path.resolve());
+  res.sendFile(path.resolve()+ '/dist/index.html');
   
 })
 
