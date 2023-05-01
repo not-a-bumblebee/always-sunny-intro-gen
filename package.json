@@ -13,7 +13,6 @@
   "name": "always-sunny",
   "version": "1.0.0",
   "main": "server.js",
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/not-a-bumblebee/always-sunny-intro-gen.git"
@@ -24,5 +23,6 @@
     "url": "https://github.com/not-a-bumblebee/always-sunny-intro-gen/issues"
   },
   "homepage": "https://github.com/not-a-bumblebee/always-sunny-intro-gen#readme",
-  "description": ""
+  "description": "",
+  "packageManager": "yarn@3.5.0"
 }
