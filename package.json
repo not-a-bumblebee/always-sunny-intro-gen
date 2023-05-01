@@ -24,5 +24,8 @@
   },
   "homepage": "https://github.com/not-a-bumblebee/always-sunny-intro-gen#readme",
   "description": "",
-  "packageManager": "yarn@3.5.0"
+  "packageManager": "yarn@3.5.0",
+  "devDependencies": {
+    "eslint": "latest"
+  }
 }
